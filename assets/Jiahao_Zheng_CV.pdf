@@ -1,0 +1,78 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 4 0 R >> >> /Contents 5 0 R >>
+endobj
+4 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+5 0 obj
+<< /Length 1484 >>
+stream
+BT
+/F1 12 Tf
+50 780 Td
+(Jiahao Zheng | CV) Tj
+0 -18 Td
+(Undergraduate Student, Nanjing University of Posts and Telecommunications) Tj
+0 -18 Td
+(B.E. in Internet of Things Engineering | GPA 4.12/5.00 | Rank 1/100 | CET-6 498) Tj
+0 -18 Td
+() Tj
+0 -18 Td
+(Research Interests: 3D Vision, 3D Gaussian Splatting, Multimodal Learning, Embodied AI, World Models, AI for Science.) Tj
+0 -18 Td
+() Tj
+0 -18 Td
+(Research Experience:) Tj
+0 -18 Td
+(- SegGeoGS: Sparse-View 3D Gaussian Splatting, ACM ICMR 2026, CCF-B.) Tj
+0 -18 Td
+(- Real2Sim: Interactive Urban Scene Instantiation, ICT-CAS IIP-VIPL Lab.) Tj
+0 -18 Td
+(- Robotic Arm Control via MuJoCo and Sim2Real, Tsinghua AIR Summer Program.) Tj
+0 -18 Td
+(- Diamond NV-Center Quantum Sensing, Applied Physics Letters / Chinese Physics B.) Tj
+0 -18 Td
+(- Editable CAD Generation and Programmatic 3D Reconstruction, Tsinghua GME Lab.) Tj
+0 -18 Td
+() Tj
+0 -18 Td
+(Honors:) Tj
+0 -18 Td
+(- National Scholarship, sole recipient in major.) Tj
+0 -18 Td
+(- National Encouragement Scholarship; Cilin Scholarship, sole recipient in school.) Tj
+0 -18 Td
+(- Outstanding Student Model, top 1%.) Tj
+0 -18 Td
+(- National awards in IC innovation, RoboMaster, RoboCup, MCM/ICM, and Mathematics Competition.) Tj
+0 -18 Td
+() Tj
+0 -18 Td
+(Homepage: https://jiahaozheng406.github.io/jiahaozheng2005/) Tj
+0 -18 Td
+(Web CV: https://jiahaozheng406.github.io/jiahaozheng2005/cv.html) Tj
+0 -18 Td
+(Email: jiahaozheng2005@163.com | GitHub: github.com/jiahaozheng406) Tj
+ET
+endstream
+endobj
+xref
+0 6
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000241 00000 n 
+0000000311 00000 n 
+trailer
+<< /Size 6 /Root 1 0 R >>
+startxref
+1846
+%%EOF
