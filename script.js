@@ -13,7 +13,7 @@ tsParticles.load("tsparticles", {
 
   particles: {
     number: {
-      value: 110,
+      value: 80,
       density: {
         enable: true,
         area: 800
@@ -21,31 +21,31 @@ tsParticles.load("tsparticles", {
     },
 
     color: {
-      value: ["#2563eb", "#06b6d4", "#8b5cf6", "#f59e0b"]
+      value: "#9ca3af"
     },
 
     links: {
       enable: true,
-      distance: 155,
-      color: "#93c5fd",
-      opacity: 0.42,
-      width: 1.1
+      distance: 140,
+      color: "#d1d5db",
+      opacity: 0.35,
+      width: 1
     },
 
     move: {
       enable: true,
-      speed: 0.9,
+      speed: 0.6,
       outModes: {
         default: "bounce"
       }
     },
 
     opacity: {
-      value: 0.72
+      value: 0.6
     },
 
     size: {
-      value: { min: 1.2, max: 4.2 }
+      value: { min: 1, max: 3 }
     }
   },
 
@@ -53,28 +53,15 @@ tsParticles.load("tsparticles", {
     events: {
       onHover: {
         enable: true,
-        mode: ["repulse", "grab"]
-      },
-      onClick: {
-        enable: true,
-        mode: "push"
+        mode: "repulse"
       },
       resize: true
     },
 
     modes: {
       repulse: {
-        distance: 95,
+        distance: 90,
         duration: 0.4
-      },
-      grab: {
-        distance: 180,
-        links: {
-          opacity: 0.55
-        }
-      },
-      push: {
-        quantity: 4
       }
     }
   },
