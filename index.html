@@ -1,191 +1,219 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Jiahao Zheng | Personal Homepage</title>
-  <meta name="description" content="Personal academic homepage of Jiahao Zheng, undergraduate researcher in 3D Vision, Multimodal Learning, Embodied AI, World Models and AI for Science." />
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Jiahao Zheng's academic homepage. Undergraduate researcher in 3D Vision, Multimodal Learning, Embodied AI, World Models, and AI for Science.">
+  <title>Jiahao Zheng</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <canvas id="particle-bg" aria-hidden="true"></canvas>
-  <div class="orb orb-a"></div>
-  <div class="orb orb-b"></div>
+  <div class="page-bg" aria-hidden="true"></div>
+  <main class="container">
+    <header class="intro" id="home">
+      <div class="intro-text">
+        <h1>Jiahao Zheng <span class="cn">郑家浩</span></h1>
+        <p>
+          I am an undergraduate student at <a href="https://www.njupt.edu.cn/" target="_blank" rel="noreferrer">Nanjing University of Posts and Telecommunications</a>,
+          majoring in Internet of Things Engineering. I am ranked <strong>1st / 100</strong> with a GPA of <strong>4.12 / 5.00</strong>.
+        </p>
+        <p>
+          My research aims to advance <strong>3D Vision</strong>, <strong>Multimodal Learning</strong>, <strong>Embodied AI</strong>, and <strong>AI for Science</strong>,
+          focusing on how intelligent systems perceive, reconstruct, and reason about the 3D physical world.
+        </p>
+        <p class="links">
+          <a href="mailto:jiahaozheng2005@163.com">Email</a>
+          <span>/</span>
+          <a href="assets/Jiahao_Zheng_CV.pdf" target="_blank" rel="noreferrer">CV</a>
+          <span>/</span>
+          <a href="https://github.com/jiahaozheng406" target="_blank" rel="noreferrer">Github</a>
+          <span>/</span>
+          <a href="https://doi.org/10.1145/3805622.3810640" target="_blank" rel="noreferrer">DOI</a>
+        </p>
+      </div>
+      <figure class="profile">
+        <img src="assets/profile.jpg" onerror="this.onerror=null;this.src='https://avatars.githubusercontent.com/u/201983696?v=4';" alt="Jiahao Zheng profile photo">
+      </figure>
+    </header>
 
-  <header class="site-header">
-    <a class="brand" href="#home">Jiahao Zheng</a>
-    <nav class="nav-links">
-      <a href="#about">About</a>
-      <a href="#research">Research</a>
-      <a href="#publications">Publications</a>
+    <nav class="toc" aria-label="Page navigation">
+      <a href="#news">News</a>
+      <a href="#research">Publications & Research</a>
+      <a href="#education">Education</a>
+      <a href="#awards">Honors</a>
       <a href="#projects">Projects</a>
-      <a href="#awards">Awards</a>
-      <a href="#contact">Contact</a>
+      <a href="#activities">Activities</a>
+      <a href="#misc">Misc</a>
     </nav>
-  </header>
 
-  <main>
-    <section id="home" class="hero section">
-      <div class="hero-copy">
-        <p class="eyebrow">Undergraduate Researcher · 3D Vision · Embodied AI · AI for Science</p>
-        <h1>Jiahao Zheng <span>郑家浩</span></h1>
-        <p class="subtitle">I explore how AI systems perceive, reconstruct, and reason about the 3D physical world.</p>
-        <p class="intro">I am an undergraduate student in Internet of Things Engineering at Nanjing University of Posts and Telecommunications, ranked <strong>1st / 100</strong> with a GPA of <strong>4.12 / 5.00</strong>. My research interests span 3D Vision, Multimodal Understanding and Generation, Embodied AI, World Models, and AI for Science.</p>
-        <div class="hero-actions">
-          <a class="btn primary" href="mailto:jiahaozheng2005@163.com">Email</a>
-          <a class="btn" href="https://github.com/jiahaozheng406" target="_blank" rel="noreferrer">GitHub</a>
-          <a class="btn" href="assets/Jiahao_Zheng_CV.pdf" target="_blank" rel="noreferrer">CV</a>
-          <a class="btn" href="https://doi.org/10.1145/3805622.3810640" target="_blank" rel="noreferrer">DOI</a>
-        </div>
-        <div class="quick-stats">
-          <div><strong>Rank 1 / 100</strong><span>Academic Performance</span></div>
-          <div><strong>National Scholarship</strong><span>Sole Recipient in Major</span></div>
-          <div><strong>ICMR · APL · CPB</strong><span>Research Outputs</span></div>
-        </div>
-      </div>
-      <div class="hero-visual">
-        <div class="photo-card">
-          <img src="https://avatars.githubusercontent.com/u/201983696?v=4" alt="Jiahao Zheng portrait" />
-          <div class="photo-caption">NJUPT · 3D Vision · Physical AI</div>
-        </div>
+    <section id="interests" class="section">
+      <h2>Research Interests</h2>
+      <p>
+        I have broad interests in computer vision and physical intelligence, especially sparse-view 3D reconstruction, 3D Gaussian Splatting,
+        neural rendering, multimodal understanding and generation, visual world models, robotic perception, and physics-informed learning.
+      </p>
+      <div class="tags">
+        <span>3D Vision</span>
+        <span>3D Gaussian Splatting</span>
+        <span>3D Reconstruction</span>
+        <span>Neural Rendering</span>
+        <span>Multimodal Learning</span>
+        <span>Embodied AI</span>
+        <span>World Models</span>
+        <span>AI for Science</span>
       </div>
     </section>
 
-    <section id="about" class="section two-col">
-      <div>
-        <p class="section-kicker">About</p>
-        <h2>Research-driven undergraduate student with strong implementation and communication skills.</h2>
-      </div>
-      <div class="glass-card">
-        <p>I have worked on sparse-view 3D Gaussian Splatting, Real2Sim interactive urban scene reconstruction, robotic manipulation via Sim2Real transfer, editable CAD generation, and physics-informed deep learning for diamond NV-center quantum sensing.</p>
-        <p>My long-term goal is to build intelligent systems that can reconstruct, understand, and interact with complex physical environments through 3D perception, multimodal reasoning, and world-model-based representation learning.</p>
-      </div>
-    </section>
-
-    <section class="section">
-      <p class="section-kicker">Research Interests</p>
-      <h2>Fields I am actively exploring</h2>
-      <div class="tag-cloud">
-        <span>3D Vision</span><span>3D Gaussian Splatting</span><span>3D Reconstruction</span><span>Neural Rendering</span><span>Multimodal Learning</span><span>Video Generation</span><span>Embodied AI</span><span>World Models</span><span>Physical AI</span><span>AI for Science</span>
-      </div>
-    </section>
-
-    <section class="section">
-      <p class="section-kicker">News</p>
-      <div class="timeline compact">
-        <div><time>Jul 2026</time><p>Actively seeking research internship and PhD opportunities in 3D Vision, Embodied AI, and Multimodal World Models.</p></div>
-        <div><time>Jun 2026</time><p>Diamond NV-center thermometry work accepted by <em>Applied Physics Letters</em>.</p></div>
-        <div><time>Mar 2026</time><p>Joined Tsinghua University GME Lab for editable CAD generation and programmatic 3D reconstruction research.</p></div>
-        <div><time>Nov 2025</time><p>Started Real2Sim interactive urban scene instantiation research at ICT, Chinese Academy of Sciences.</p></div>
-        <div><time>Aug 2025</time><p>Awarded Best Team and Outstanding Camper in the Tsinghua AIR Summer Program.</p></div>
-      </div>
+    <section id="news" class="section">
+      <h2>News</h2>
+      <ul class="news-list">
+        <li><span>[Jul 2026]</span> Actively seeking research internship and PhD opportunities in 3D Vision, Embodied AI, and Multimodal World Models.</li>
+        <li><span>[Jun 2026]</span> Diamond NV-center thermometry work accepted by <em>Applied Physics Letters</em>.</li>
+        <li><span>[Mar 2026]</span> Joined Tsinghua University GME Lab for editable CAD generation and programmatic 3D reconstruction research.</li>
+        <li><span>[Nov 2025]</span> Started Real2Sim interactive urban scene instantiation research at ICT, Chinese Academy of Sciences.</li>
+        <li><span>[Aug 2025]</span> Awarded Best Team and Outstanding Camper in the Tsinghua AIR Summer Program.</li>
+      </ul>
     </section>
 
     <section id="research" class="section">
-      <p class="section-kicker">Research Experience</p>
-      <h2>Selected research projects</h2>
-      <div class="card-grid">
-        <article class="research-card featured">
-          <div class="card-top"><span>3D Vision</span><span>ACM ICMR 2026</span></div>
-          <h3>SegGeoGS: Robust Sparse-View 3D Gaussian Splatting</h3>
-          <p>Proposed a hierarchical depth regularization framework for sparse-view 3DGS, integrating foreground segmentation masks, depth-prior supervision, random Gaussian dropout, and multi-view consistency constraints to improve geometry and rendering fidelity.</p>
-          <a href="https://doi.org/10.1145/3805622.3810640" target="_blank" rel="noreferrer">View DOI →</a>
-        </article>
-        <article class="research-card">
-          <div class="card-top"><span>Real2Sim</span><span>ICT-CAS</span></div>
-          <h3>Interactive Urban Scene Instantiation</h3>
-          <p>Worked on UrbanVerse, a retrieval-generation continual-learning framework for interactive urban scene reconstruction, combining semantic retrieval, generation, pose estimation, and Isaac Sim loading.</p>
-        </article>
-        <article class="research-card">
-          <div class="card-top"><span>Embodied AI</span><span>Tsinghua AIR</span></div>
-          <h3>Robotic Arm Control via MuJoCo and Sim2Real</h3>
-          <p>Led ACT policy deployment on AIRBOT Play within a MuJoCo-based Sim2Real pipeline, completing real-world grasping through perception-decision-control integration.</p>
-        </article>
-        <article class="research-card">
-          <div class="card-top"><span>AI4Science</span><span>APL / CPB</span></div>
-          <h3>Diamond NV-Center Quantum Sensing</h3>
-          <p>Led physics-informed deep learning studies for transient signal reconstruction and high-temperature thermometry under low-SNR and zero-phonon-line quenching conditions.</p>
-        </article>
-        <article class="research-card">
-          <div class="card-top"><span>CAD</span><span>Tsinghua GME</span></div>
-          <h3>Editable CAD Generation and Programmatic Reconstruction</h3>
-          <p>Participated in building a CAD reconstruction framework based on industrial CAD APIs, focusing on multimodal geometry understanding, executable CAD program generation, kernel feedback, and iterative correction.</p>
-        </article>
-      </div>
+      <h2>Publications & Research Experience</h2>
+
+      <article class="entry highlight">
+        <div class="thumb thumb-3d">3DGS</div>
+        <div class="entry-body">
+          <h3>Towards Robust Sparse-View 3D Gaussian Splatting via Hierarchical Depth and Multi-View Consistency</h3>
+          <p class="meta">National Undergraduate Innovation Project · ACM ICMR 2026 · CCF-B</p>
+          <p class="role">Role: Project Lead & Core Contributor</p>
+          <p>
+            Proposed SegGeoGS, a hierarchical depth regularization framework for sparse-view 3D Gaussian Splatting. The method integrates foreground segmentation masks,
+            depth-prior supervision, random Gaussian dropout, and multi-view consistency constraints to improve geometric reconstruction and rendering fidelity.
+          </p>
+          <p class="entry-links"><a href="https://doi.org/10.1145/3805622.3810640" target="_blank" rel="noreferrer">DOI</a> / <a href="https://github.com/jiahaozheng406/3DGS-Research" target="_blank" rel="noreferrer">Code</a></p>
+        </div>
+      </article>
+
+      <article class="entry">
+        <div class="thumb thumb-city">Real2Sim</div>
+        <div class="entry-body">
+          <h3>Real2Sim: Interactive Urban Scene Instantiation</h3>
+          <p class="meta">Institute of Computing Technology, Chinese Academy of Sciences · IIP-VIPL Lab · Nov 2025 – Jun 2026</p>
+          <p class="role">Supervisors: Prof. Shiguang Shan & Zhenliang He</p>
+          <p>
+            Worked on UrbanVerse, a retrieval-generation continual-learning framework driven by semantic-similarity-based hybrid decisions. The system addresses asset missingness and interaction deficiency in Real2Sim pipelines through scene reconstruction, retrieval-first generation, pose estimation, and Isaac Sim loading.
+          </p>
+          <p class="entry-links"><a href="https://github.com/jiahaozheng406/vipl" target="_blank" rel="noreferrer">Project</a></p>
+        </div>
+      </article>
+
+      <article class="entry">
+        <div class="thumb thumb-robot">Robot</div>
+        <div class="entry-body">
+          <h3>Robotic Arm Control via MuJoCo Simulation and Sim2Real Transfer</h3>
+          <p class="meta">Tsinghua University AIR Summer Program · Jul 2025 – Aug 2025</p>
+          <p class="role">Role: Team Lead · Best Team & Outstanding Camper</p>
+          <p>
+            Led ACT policy deployment on the AIRBOT Play robotic arm within a MuJoCo-based Sim2Real pipeline. Improved policy robustness and completed real-world grasping tasks through perception-decision-control integration.
+          </p>
+        </div>
+      </article>
+
+      <article class="entry">
+        <div class="thumb thumb-quantum">NV</div>
+        <div class="entry-body">
+          <h3>Physics-Informed Deep Learning for Diamond NV-Center Quantum Sensing</h3>
+          <p class="meta">Qingyou Quantum Team · Apr 2024 – Present · Applied Physics Letters / Chinese Physics B</p>
+          <p class="role">Role: 1st / 2nd Author</p>
+          <p>
+            Led two AI-for-Science research projects on NV-center sensing, including transient signal reconstruction and high-temperature thermometry. The work combines physical priors, U-Net denoising, spectral trend learning, and ResNet-based inference for robust sensing under low-SNR and zero-phonon-line quenching conditions.
+          </p>
+        </div>
+      </article>
+
+      <article class="entry">
+        <div class="thumb thumb-cad">CAD</div>
+        <div class="entry-body">
+          <h3>Editable CAD Generation and Programmatic 3D Reconstruction</h3>
+          <p class="meta">Tsinghua University GME Lab · Mar 2026 – Present</p>
+          <p>
+            Participated in building a CAD reconstruction framework based on industrial CAD APIs, focusing on multimodal geometric understanding, executable CAD program generation, kernel execution feedback, and iterative geometric error correction for complex industrial parts.
+          </p>
+        </div>
+      </article>
     </section>
 
-    <section id="publications" class="section">
-      <p class="section-kicker">Publications</p>
-      <h2>Selected publications and outputs</h2>
-      <div class="pub-list">
-        <article><h3>Towards Robust Sparse-View 3D Gaussian Splatting via Hierarchical Depth and Multi-View Consistency</h3><p><strong>ACM ICMR 2026</strong> · CCF-B · <a href="https://doi.org/10.1145/3805622.3810640" target="_blank" rel="noreferrer">DOI</a></p></article>
-        <article><h3>Diamond Thermometry Beyond the Zero-Phonon Line via Physics-Aware Spectral Trend Learning</h3><p><strong>Applied Physics Letters</strong> · Nature Index · JCR Q1 · First Author</p></article>
-        <article><h3>Physics-Informed Transient Signal Reconstruction for Diamond NV-Center Quantum Sensing</h3><p><strong>Chinese Physics B</strong> · Accepted · Second Author</p></article>
-        <article><h3>Invention Patent</h3><p>Sparse-view 3D Gaussian Splatting reconstruction related invention patent.</p></article>
+    <section id="education" class="section">
+      <h2>Education</h2>
+      <div class="education-block">
+        <div>
+          <h3>Nanjing University of Posts and Telecommunications</h3>
+          <p>B.E. in Internet of Things Engineering, School of Internet of Things Engineering</p>
+        </div>
+        <div class="date">Sep 2023 – Present</div>
       </div>
-    </section>
-
-    <section id="projects" class="section">
-      <p class="section-kicker">Engineering Projects & Open Source</p>
-      <h2>Systems, robots, and research demos</h2>
-      <div class="project-grid">
-        <a class="project-card" href="https://github.com/jiahaozheng406/3DGS-Research" target="_blank" rel="noreferrer"><h3>3DGS-Research</h3><p>Codebase and experiments for sparse-view 3D Gaussian Splatting research.</p></a>
-        <a class="project-card" href="https://github.com/jiahaozheng406/vipl" target="_blank" rel="noreferrer"><h3>Real2Sim / VIPL</h3><p>Urban scene reconstruction and interactive simulation research.</p></a>
-        <a class="project-card" href="https://github.com/jiahaozheng406/Physics_Agent_Project" target="_blank" rel="noreferrer"><h3>Physics Agent</h3><p>LLM-powered physics problem-solving agent with tool use and reasoning.</p></a>
-        <a class="project-card" href="https://github.com/jiahaozheng406/Voice-LLM-SCARA-Robot-jichuangsai-" target="_blank" rel="noreferrer"><h3>Voice-LLM-SCARA</h3><p>Voice-controlled SCARA robotic arm with LLM-based interaction.</p></a>
-        <a class="project-card" href="https://github.com/jiahaozheng406/Basic-Image-Filtering" target="_blank" rel="noreferrer"><h3>Basic Image Filtering</h3><p>Classical image filtering algorithms implemented from scratch.</p></a>
-        <a class="project-card" href="https://github.com/jiahaozheng406/Quadrotor-Trajectory-Tracking-PD-Feedforward-Simulink" target="_blank" rel="noreferrer"><h3>Quadrotor Tracking</h3><p>PD + feedforward controller for quadrotor trajectory tracking in Simulink.</p></a>
-      </div>
-    </section>
-
-    <section id="education" class="section two-col">
-      <div>
-        <p class="section-kicker">Education</p>
-        <h2>Nanjing University of Posts and Telecommunications</h2>
-      </div>
-      <div class="glass-card">
-        <p><strong>B.E. in Internet of Things Engineering</strong>, School of Internet of Things Engineering, Sep 2023 – Present.</p>
-        <p><strong>GPA:</strong> 4.12 / 5.00 · <strong>Rank:</strong> 1 / 100 · <strong>CET-6:</strong> 498.</p>
-        <p><strong>Selected Coursework:</strong> Data Structures and Algorithms, Computer Networks, Operating Systems, Database Systems, Digital Circuits and Logic Design, Advanced Mathematics, Discrete Mathematics, Programming.</p>
-      </div>
+      <ul class="bullets">
+        <li>GPA: <strong>4.12 / 5.00</strong>; Rank: <strong>1 / 100</strong>; CET-6: <strong>498</strong>.</li>
+        <li>Selected Coursework: Data Structures and Algorithms, Computer Networks, Operating Systems, Database Systems, Digital Circuits and Logic Design, Advanced Mathematics, Discrete Mathematics, Programming.</li>
+        <li>Research interests: 3D Vision, Video Generation, Multimodal Understanding & Generation, World Models, and Physical AI.</li>
+      </ul>
     </section>
 
     <section id="awards" class="section">
-      <p class="section-kicker">Honors & Awards</p>
-      <h2>Academic honors and competitions</h2>
-      <div class="award-grid">
-        <div><h3>Academic Honors</h3><ul><li>National Scholarship, sole recipient in major</li><li>National Encouragement Scholarship</li><li>Cilin Scholarship, sole recipient in school</li><li>Outstanding Student Model, top 1%</li><li>Outstanding Communist Youth League Member</li></ul></div>
-        <div><h3>Competitions</h3><ul><li>National Second Prize, Integrated Circuit Innovation & Entrepreneurship Competition</li><li>Third Prize, RoboMaster 2026 RMUL</li><li>Third Prize, China Robot Competition & RoboCup China Open</li><li>Meritorious Winner, MCM/ICM</li><li>National Second Prize, Undergraduate Mathematics Competition</li></ul></div>
-      </div>
+      <h2>Honors & Awards</h2>
+      <ul class="award-list">
+        <li><strong>National Scholarship</strong>, sole recipient in major.</li>
+        <li><strong>National Encouragement Scholarship</strong>; <strong>Cilin Scholarship</strong>, sole recipient in school.</li>
+        <li><strong>Outstanding Student Model</strong>, top 1%; Outstanding Communist Youth League Member.</li>
+        <li>National Second Prize, National College Student Integrated Circuit Innovation & Entrepreneurship Competition.</li>
+        <li>Third Prize, RoboMaster 2026 RMUL; Third Prize, China Robot Competition & RoboCup China Open.</li>
+        <li>Meritorious Winner, MCM/ICM; National Second Prize, National Undergraduate Mathematics Competition.</li>
+      </ul>
     </section>
 
-    <section class="section two-col">
-      <div>
-        <p class="section-kicker">Leadership</p>
-        <h2>Innovation and Entrepreneurship Association, NJUPT</h2>
-      </div>
-      <div class="glass-card">
-        <p><strong>President & Co-Founder</strong>, Sep 2024 – Present.</p>
+    <section id="projects" class="section">
+      <h2>Course Projects & Open Source</h2>
+      <article class="mini-entry">
+        <h3><a href="https://github.com/jiahaozheng406/Physics_Agent_Project" target="_blank" rel="noreferrer">Physics Agent</a></h3>
+        <p>LLM-powered physics problem-solving agent with tool use and reasoning capabilities.</p>
+      </article>
+      <article class="mini-entry">
+        <h3><a href="https://github.com/jiahaozheng406/Voice-LLM-SCARA-Robot-jichuangsai-" target="_blank" rel="noreferrer">Voice-LLM-SCARA-Robot</a></h3>
+        <p>Voice-controlled SCARA robotic arm with LLM-based intelligent interaction on RISC-V.</p>
+      </article>
+      <article class="mini-entry">
+        <h3><a href="https://github.com/jiahaozheng406/Basic-Image-Filtering" target="_blank" rel="noreferrer">Basic Image Filtering</a></h3>
+        <p>Classical image filtering algorithms including Gaussian, median, and bilateral filtering implemented from scratch.</p>
+      </article>
+      <article class="mini-entry">
+        <h3><a href="https://github.com/jiahaozheng406/Quadrotor-Trajectory-Tracking-PD-Feedforward-Simulink" target="_blank" rel="noreferrer">Quadrotor Trajectory Tracking</a></h3>
+        <p>PD + feedforward controller for quadrotor trajectory tracking in Simulink.</p>
+      </article>
+    </section>
+
+    <section id="activities" class="section">
+      <h2>Extracurricular Activities</h2>
+      <article class="mini-entry">
+        <h3>Innovation and Entrepreneurship Association, NJUPT</h3>
+        <p class="meta">President & Co-Founder · Sep 2024 – Present</p>
         <p>Co-founded the association, attracted angel investors and venture capital partners, organized university-industry events, research competition workshops, and frontier technology seminars, serving over 10,000 students cumulatively.</p>
-      </div>
+      </article>
+      <article class="mini-entry">
+        <h3>Sports & Volunteering</h3>
+        <p>Represented NJUPT in track and field events, participated in science outreach and volunteer activities, and enjoy marathon running, football, and traveling.</p>
+      </article>
     </section>
 
-    <section class="section">
-      <p class="section-kicker">Skills</p>
-      <div class="skills"><span>Python</span><span>PyTorch</span><span>Linux</span><span>Git</span><span>LaTeX</span><span>HTML/CSS</span><span>MATLAB</span><span>MySQL</span><span>Origin</span><span>PowerPoint</span><span>Isaac Sim</span><span>MuJoCo</span></div>
+    <section id="misc" class="section">
+      <h2>Misc</h2>
+      <p>
+        Outside research, I enjoy marathon running, football, traveling, scientific visualization, presentation design, and building research demos.
+        I also have experience in scientific writing, photography, event organization, and interdisciplinary collaboration.
+      </p>
     </section>
 
-    <section id="contact" class="section contact-card">
-      <p class="section-kicker">Contact</p>
-      <h2>Feel free to reach out for research collaboration or PhD opportunities.</h2>
-      <div class="hero-actions center">
-        <a class="btn primary" href="mailto:jiahaozheng2005@163.com">jiahaozheng2005@163.com</a>
-        <a class="btn" href="https://github.com/jiahaozheng406" target="_blank" rel="noreferrer">GitHub</a>
-      </div>
-    </section>
+    <footer>
+      <p>© 2026 Jiahao Zheng. Built with GitHub Pages.</p>
+    </footer>
   </main>
-
-  <footer>© 2026 Jiahao Zheng. Built with GitHub Pages.</footer>
   <script src="script.js"></script>
 </body>
 </html>
