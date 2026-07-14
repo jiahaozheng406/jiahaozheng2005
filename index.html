@@ -15,9 +15,9 @@
     <a href="#about">About Me</a>
     <a href="#news">News</a>
     <a href="#publications">Publications</a>
+    <a href="#research">Research</a>
     <a href="#honors">Honors and Awards</a>
     <a href="#educations">Educations</a>
-    <a href="#talks">Invited Talks</a>
     <a href="#internships">Internships</a>
   </nav>
   <main class="container">
@@ -47,7 +47,9 @@
           Chinese Academy of Sciences, under the supervision of <a href="https://vipl.ict.ac.cn/people/_sgshan/" target="_blank" rel="noreferrer">Shiguang Shan</a>,
           <a href="https://vipl.ict.ac.cn/people/_mnkan/" target="_blank" rel="noreferrer">Meina Kan</a>, and
           <a href="https://vipl.ict.ac.cn/people/_zlhe/" target="_blank" rel="noreferrer">Zhenliang He</a>.
-          My research interests include computer vision, 3D vision, world models, embodied intelligence, and AI for Science.
+        </p>
+        <p>
+          I mainly work on <strong>3D Vision</strong>, <strong>Multimodal World Models</strong>, <strong>Embodied Intelligence</strong>, and <strong>AI for Science</strong>. My research goal is to integrate geometric and physical priors into real-world downstream applications, including sparse-view 3D reconstruction, editable CAD generation, Real2Sim scene instantiation, robotic perception, and deep learning-empowered quantum sensing.
         </p>
       </div>
     </header>
@@ -63,30 +65,37 @@
 
     <section class="section" id="publications">
       <h2>Publications</h2>
-      <article class="entry">
-        <div class="thumb">3DGS</div>
-        <div class="entry-body">
+      <p class="section-note">Representative publications and preprints. <sup>*</sup> denotes corresponding author.</p>
+
+      <article class="pub-entry">
+        <div class="pub-thumb pub-3dgs"><span>SegGeoGS</span><small>Sparse-View 3DGS</small></div>
+        <div class="pub-body">
           <h3>Towards Robust Sparse-View 3D Gaussian Splatting via Hierarchical Depth and Multi-View Consistency</h3>
-          <p class="meta">ACM ICMR, 2026</p>
-          <p>Zheng Jianhui, <strong>Jiahao Zheng</strong>, Huo Zhiyong<sup>*</sup></p>
-          <p><a href="https://doi.org/10.1145/3805622.3810640" target="_blank" rel="noreferrer">Paper</a> | <a href="https://youtu.be/wxwsPnEt7VY" target="_blank" rel="noreferrer">Video</a> | <a href="#" title="BibTeX available on request">Bib</a></p>
+          <p class="authors">Zheng Jianhui, <strong>Jiahao Zheng</strong>, Huo Zhiyong<sup>*</sup></p>
+          <p class="venue">ACM ICMR, 2026</p>
+          <p class="pub-desc">SegGeoGS reformulates sparse-view 3D Gaussian Splatting as a hierarchical consensus problem across geometric and photometric manifolds. It combines semantic foreground constraints, adaptive depth-prior calibration, stochastic Gaussian depth rendering, and multi-view geometric/texture consistency to improve geometry fidelity under sparse observations.</p>
+          <p class="pub-links"><a href="https://doi.org/10.1145/3805622.3810640" target="_blank" rel="noreferrer">Paper</a> / <a href="https://youtu.be/wxwsPnEt7VY" target="_blank" rel="noreferrer">Video</a> / <a href="#" title="@inbook{10.1145/3805622.3810640, author={Zheng, Jianhui and Huo, Zhiyong and Zheng, Jiahao}, title={Towards Robust Sparse-View 3D Gaussian Splatting via Hierarchical Depth and Multi-View Consistency}, booktitle={Proceedings of the 2026 International Conference on Multimedia Retrieval}, pages={1120--1127}, year={2026}, doi={10.1145/3805622.3810640}}">Bib</a></p>
         </div>
       </article>
-      <article class="entry">
-        <div class="thumb">APL</div>
-        <div class="entry-body">
+
+      <article class="pub-entry">
+        <div class="pub-thumb pub-apl"><span>NV-Thermo</span><small>Physics-aware ST Learning</small></div>
+        <div class="pub-body">
           <h3>Diamond thermometry beyond the zero-phonon line via physics-aware spectral trend learning</h3>
-          <p class="meta"><em>Applied Physics Letters</em>, 129(1): 014001, 2026 · Nature Index</p>
-          <p><strong>Jiahao Zheng</strong>, Shu Liu, Weizhou Wu, Jinxu Wang, Junchi Gao, Tianxiang Li, Jingqiang Han, Xiaoya Xu, Chenlu Bu, Baihao Zhou, Yiming Jia, Yinjun Wang, Zixuan Tan, Xinran Gao, Jiayi Yuan, Hui Yang, and Guanxiang Du</p>
-          <p><a href="https://pubs.aip.org/aip/apl/article-abstract/129/1/014001/3397569/Diamond-thermometry-beyond-the-zero-phonon-line?redirectedFrom=fulltext" target="_blank" rel="noreferrer">Paper</a> | <a href="https://doi.org/10.1063/5.0339528" target="_blank" rel="noreferrer">DOI</a> | <a href="#" title="@article{10.1063/5.0339528, author={Zheng, Jiahao and Liu, Shu and Wu, Weizhou and Wang, Jinxu and Gao, Junchi and Li, Tianxiang and Han, Jingqiang and Xu, Xiaoya and Bu, Chenlu and Zhou, Baihao and Jia, Yiming and Wang, Yinjun and Tan, Zixuan and Gao, Xinran and Yuan, Jiayi and Yang, Hui and Du, Guanxiang}, title={Diamond thermometry beyond the zero-phonon line via physics-aware spectral trend learning}, journal={Applied Physics Letters}, volume={129}, number={1}, pages={014001}, year={2026}, doi={10.1063/5.0339528}}">Bib</a></p>
+          <p class="authors"><strong>Jiahao Zheng</strong>, Shu Liu, Weizhou Wu, Jinxu Wang, Junchi Gao, Tianxiang Li, Jingqiang Han, Xiaoya Xu, Chenlu Bu, Baihao Zhou, Yiming Jia, Yinjun Wang, Zixuan Tan, Xinran Gao, Jiayi Yuan, Hui Yang, and Guanxiang Du</p>
+          <p class="venue"><em>Applied Physics Letters</em>, 129(1): 014001, 2026 · Nature Index</p>
+          <p class="pub-desc">This work moves diamond thermometry beyond fragile zero-phonon-line peak tracking by learning the thermodynamic evolution of the phonon sideband over a broad spectral window. A physics-aware spectral decomposition and five-channel dilated ResNet enable robust microwave-free temperature inference under high-temperature and low-SNR conditions.</p>
+          <p class="pub-links"><a href="https://pubs.aip.org/aip/apl/article-abstract/129/1/014001/3397569/Diamond-thermometry-beyond-the-zero-phonon-line?redirectedFrom=fulltext" target="_blank" rel="noreferrer">Paper</a> / <a href="https://doi.org/10.1063/5.0339528" target="_blank" rel="noreferrer">DOI</a> / <a href="#" title="@article{10.1063/5.0339528, author={Zheng, Jiahao and Liu, Shu and Wu, Weizhou and Wang, Jinxu and Gao, Junchi and Li, Tianxiang and Han, Jingqiang and Xu, Xiaoya and Bu, Chenlu and Zhou, Baihao and Jia, Yiming and Wang, Yinjun and Tan, Zixuan and Gao, Xinran and Yuan, Jiayi and Yang, Hui and Du, Guanxiang}, title={Diamond thermometry beyond the zero-phonon line via physics-aware spectral trend learning}, journal={Applied Physics Letters}, volume={129}, number={1}, pages={014001}, year={2026}, doi={10.1063/5.0339528}}">Bib</a></p>
         </div>
       </article>
-      <article class="entry">
-        <div class="thumb">CPB</div>
-        <div class="entry-body">
+
+      <article class="pub-entry">
+        <div class="pub-thumb pub-cpb"><span>NV-Sensing</span><small>Deep Learning</small></div>
+        <div class="pub-body">
           <h3>Deep learning-enabled diamond NV-center quantum sensing</h3>
-          <p class="meta"><em>Chinese Physics B</em>, 2026</p>
-          <p><a href="https://iopscience.iop.org/article/10.1088/1674-1056/ae5f88" target="_blank" rel="noreferrer">Paper</a></p>
+          <p class="venue"><em>Chinese Physics B</em>, 2026</p>
+          <p class="pub-desc">A deep-learning-enabled quantum sensing study exploring how neural models and physical constraints can improve signal reconstruction, spectral interpretation, and sensing robustness in diamond NV-center systems.</p>
+          <p class="pub-links"><a href="https://iopscience.iop.org/article/10.1088/1674-1056/ae5f88" target="_blank" rel="noreferrer">Paper</a></p>
         </div>
       </article>
     </section>
@@ -112,12 +121,12 @@
         </div>
       </article>
       <article class="entry">
-        <div class="thumb">NV</div>
+        <div class="thumb">CAD</div>
         <div class="entry-body">
-          <h3>Physics-Informed Deep Learning for Diamond NV-Center Quantum Sensing</h3>
-          <p class="role">1st / 2nd Author, Qingyou Quantum Team</p>
-          <p class="meta">Applied Physics Letters (Nature Index) / Chinese Physics B</p>
-          <p>Led research on deep learning-empowered NV-center thermometry and transient signal reconstruction using physical priors, spectral trend learning, and deep neural networks.</p>
+          <h3>Editable CAD Generation and Programmatic 3D Reconstruction</h3>
+          <p class="role">Research Intern, Tsinghua University GME Lab</p>
+          <p class="meta">Mar 2026 - Present</p>
+          <p>Working on multimodal geometric understanding, CAD program generation, CAD-kernel execution feedback, and geometry-error iterative correction for editable 3D reconstruction.</p>
         </div>
       </article>
     </section>
@@ -136,11 +145,6 @@
       <ul class="bullets">
         <li>2023.09 - now, B.Eng. in Internet of Things Engineering, major ranking top 1%, Nanjing University of Posts and Telecommunications, Nanjing, China.</li>
       </ul>
-    </section>
-
-    <section class="section" id="talks">
-      <h2>Invited Talks</h2>
-      <p>not yet</p>
     </section>
 
     <section class="section" id="internships">
